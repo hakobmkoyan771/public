@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testingenv
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: testingenv
+  template:
+    metadata:
+      labels:
+        app: testingenv
+    spec:
+      imagePullSecrets: 
+        - name: ws
+      containers:
+        - name: nginx
+          image: hakobmkoyan771/mercury
+          ports:
+            - containerPort: 80
