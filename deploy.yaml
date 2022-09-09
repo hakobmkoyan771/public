@@ -16,6 +16,6 @@ spec:
         - name: ws
       containers:
         - name: nginx
-          image: hakobmkoyan771/mercury:0.1.0
+          image: anun1.azurecr.io/nginx:1.7
           ports:
             - containerPort: 80
