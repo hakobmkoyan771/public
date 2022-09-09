@@ -16,6 +16,6 @@ spec:
         - name: ws
       containers:
         - name: nginx
-          image: anun1.azurecr.io/nginx:1.7
+          image: 915024619138.dkr.ecr.eu-central-1.amazonaws.com/myreg221:1.7
           ports:
             - containerPort: 80
